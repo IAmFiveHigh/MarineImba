@@ -13,6 +13,11 @@
 		469609171E820DD500C5CF36 /* MarineImba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 469609151E820DD500C5CF36 /* MarineImba.xcdatamodeld */; };
 		469609191E820DD500C5CF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469609181E820DD500C5CF36 /* Assets.xcassets */; };
 		4696091C1E820DD500C5CF36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4696091A1E820DD500C5CF36 /* LaunchScreen.storyboard */; };
+		4696095C1E83EBD300C5CF36 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696095B1E83EBD300C5CF36 /* Extension.swift */; };
+		4696095F1E83ECB500C5CF36 /* 开始游戏.png in Resources */ = {isa = PBXBuildFile; fileRef = 4696095E1E83ECB500C5CF36 /* 开始游戏.png */; };
+		469609621E83EE0100C5CF36 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469609611E83EE0100C5CF36 /* BaseViewController.swift */; };
+		469609641E83EE1600C5CF36 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469609631E83EE1600C5CF36 /* GameViewController.swift */; };
+		46E1CEF01E86B7B000C8630F /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 46E1CEEF1E86B7B000C8630F /* bg.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		469609181E820DD500C5CF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4696091B1E820DD500C5CF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4696091D1E820DD500C5CF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4696095B1E83EBD300C5CF36 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4696095E1E83ECB500C5CF36 /* 开始游戏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始游戏.png"; sourceTree = "<group>"; };
+		469609611E83EE0100C5CF36 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		469609631E83EE1600C5CF36 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		46E1CEEF1E86B7B000C8630F /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +50,10 @@
 		469609021E820DD500C5CF36 = {
 			isa = PBXGroup;
 			children = (
+				469609601E83EDEE00C5CF36 /* GameViewController */,
 				4696090D1E820DD500C5CF36 /* MarineImba */,
+				4696095D1E83EC5800C5CF36 /* image */,
+				4696095A1E83EBD300C5CF36 /* Tool */,
 				4696090C1E820DD500C5CF36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +78,32 @@
 				469609151E820DD500C5CF36 /* MarineImba.xcdatamodeld */,
 			);
 			path = MarineImba;
+			sourceTree = "<group>";
+		};
+		4696095A1E83EBD300C5CF36 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4696095B1E83EBD300C5CF36 /* Extension.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4696095D1E83EC5800C5CF36 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				46E1CEEF1E86B7B000C8630F /* bg.jpeg */,
+				4696095E1E83ECB500C5CF36 /* 开始游戏.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		469609601E83EDEE00C5CF36 /* GameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				469609611E83EE0100C5CF36 /* BaseViewController.swift */,
+				469609631E83EE1600C5CF36 /* GameViewController.swift */,
+			);
+			path = GameViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E1CEF01E86B7B000C8630F /* bg.jpeg in Resources */,
 				4696091C1E820DD500C5CF36 /* LaunchScreen.storyboard in Resources */,
 				469609191E820DD500C5CF36 /* Assets.xcassets in Resources */,
+				4696095F1E83ECB500C5CF36 /* 开始游戏.png in Resources */,
 				469609141E820DD500C5CF36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,9 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469609621E83EE0100C5CF36 /* BaseViewController.swift in Sources */,
 				469609171E820DD500C5CF36 /* MarineImba.xcdatamodeld in Sources */,
 				469609111E820DD500C5CF36 /* ViewController.swift in Sources */,
 				4696090F1E820DD500C5CF36 /* AppDelegate.swift in Sources */,
+				469609641E83EE1600C5CF36 /* GameViewController.swift in Sources */,
+				4696095C1E83EBD300C5CF36 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +348,7 @@
 				469609221E820DD500C5CF36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
