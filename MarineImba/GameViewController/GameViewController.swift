@@ -14,8 +14,8 @@ let horizonLine = screenHeigth / 3 * 2
 class GameViewController: BaseViewController {
 
     //MARK: - 属性
-    fileprivate let goForwardSpeed: CGFloat = -3
-    fileprivate let retreatSpeed: CGFloat = 3
+    fileprivate let goForwardSpeed: CGFloat = -2
+    fileprivate let retreatSpeed: CGFloat = 2
     fileprivate var speed: CGFloat = 0
     
     //MARK: - 主角
@@ -59,6 +59,8 @@ class GameViewController: BaseViewController {
         setupMarine()
         
         setupDirectionButton()
+        
+        setupFireButton()
         
         setupTimer()
     }
@@ -132,14 +134,32 @@ class GameViewController: BaseViewController {
         switch sender.tag {
         case 10: //后退
             speed = retreatSpeed
+            marineKing.retreat()
         default: //前进
             speed = goForwardSpeed
+            marineKing.goForward()
         }
     }
     
     @objc fileprivate func directionButtonCancel() {
         
         speed = 0
+        marineKing.endAnimation()
+    }
+    
+    fileprivate func setupFireButton() {
+        
+        let button = UIButton(frame: CGRect(x: 20, y: horizonLine + 20, width: marineHeight, height: marineHeight))
+        button.setBackgroundImage(UIImage(named: "fire"), for: .normal)
+        button.addTarget(self, action: #selector(fire), for: .touchUpInside)
+        view.addSubview(button)
+    }
+    
+    @objc fileprivate func fire() {
+        
+        directionButtonCancel()
+        marineKing.fire()
+        
     }
     
     //MARK: - 添加计时器
