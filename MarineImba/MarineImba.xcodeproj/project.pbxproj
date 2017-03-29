@@ -26,6 +26,8 @@
 		463AC04E1E892C8E00FE0C01 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC03C1E892C8E00FE0C01 /* 5.png */; };
 		463AC04F1E892C8E00FE0C01 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC03D1E892C8E00FE0C01 /* 6.png */; };
 		463AC0521E8933C400FE0C01 /* Marine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463AC0511E8933C400FE0C01 /* Marine.swift */; };
+		465E26DA1E8BB2E200011521 /* button_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26D81E8BB2E200011521 /* button_left.png */; };
+		465E26DB1E8BB2E200011521 /* button_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26D91E8BB2E200011521 /* button_right.png */; };
 		4696090F1E820DD500C5CF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696090E1E820DD500C5CF36 /* AppDelegate.swift */; };
 		469609111E820DD500C5CF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469609101E820DD500C5CF36 /* ViewController.swift */; };
 		469609141E820DD500C5CF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469609121E820DD500C5CF36 /* Main.storyboard */; };
@@ -59,6 +61,8 @@
 		463AC03C1E892C8E00FE0C01 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		463AC03D1E892C8E00FE0C01 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		463AC0511E8933C400FE0C01 /* Marine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marine.swift; sourceTree = "<group>"; };
+		465E26D81E8BB2E200011521 /* button_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_left.png; sourceTree = "<group>"; };
+		465E26D91E8BB2E200011521 /* button_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_right.png; sourceTree = "<group>"; };
 		4696090B1E820DD500C5CF36 /* MarineImba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarineImba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4696090E1E820DD500C5CF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469609101E820DD500C5CF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +136,15 @@
 			path = Marine;
 			sourceTree = "<group>";
 		};
+		465E26D71E8BB2E200011521 /* 箭头 */ = {
+			isa = PBXGroup;
+			children = (
+				465E26D81E8BB2E200011521 /* button_left.png */,
+				465E26D91E8BB2E200011521 /* button_right.png */,
+			);
+			path = "箭头";
+			sourceTree = "<group>";
+		};
 		469609021E820DD500C5CF36 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +189,7 @@
 		4696095D1E83EC5800C5CF36 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				465E26D71E8BB2E200011521 /* 箭头 */,
 				463AC0291E892C8E00FE0C01 /* 后退 */,
 				463AC0311E892C8E00FE0C01 /* 开火 */,
 				463AC0361E892C8E00FE0C01 /* 前进 */,
@@ -263,12 +277,14 @@
 				463AC0431E892C8E00FE0C01 /* -5.png in Resources */,
 				463AC0441E892C8E00FE0C01 /* -6.png in Resources */,
 				4696091C1E820DD500C5CF36 /* LaunchScreen.storyboard in Resources */,
+				465E26DA1E8BB2E200011521 /* button_left.png in Resources */,
 				463AC03F1E892C8E00FE0C01 /* -1.png in Resources */,
 				463AC04F1E892C8E00FE0C01 /* 6.png in Resources */,
 				463AC04A1E892C8E00FE0C01 /* 1.png in Resources */,
 				463AC0411E892C8E00FE0C01 /* -3.png in Resources */,
 				463AC04E1E892C8E00FE0C01 /* 5.png in Resources */,
 				469609191E820DD500C5CF36 /* Assets.xcassets in Resources */,
+				465E26DB1E8BB2E200011521 /* button_right.png in Resources */,
 				463AC0471E892C8E00FE0C01 /* 打1.png in Resources */,
 				4696095F1E83ECB500C5CF36 /* 开始游戏.png in Resources */,
 				463AC03E1E892C8E00FE0C01 /* -0.png in Resources */,
