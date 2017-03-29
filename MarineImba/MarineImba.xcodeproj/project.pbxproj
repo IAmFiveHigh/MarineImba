@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463AC03E1E892C8E00FE0C01 /* -0.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC02A1E892C8E00FE0C01 /* -0.png */; };
+		463AC03F1E892C8E00FE0C01 /* -1.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC02B1E892C8E00FE0C01 /* -1.png */; };
+		463AC0401E892C8E00FE0C01 /* -2.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC02C1E892C8E00FE0C01 /* -2.png */; };
+		463AC0411E892C8E00FE0C01 /* -3.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC02D1E892C8E00FE0C01 /* -3.png */; };
+		463AC0421E892C8E00FE0C01 /* -4.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC02E1E892C8E00FE0C01 /* -4.png */; };
+		463AC0431E892C8E00FE0C01 /* -5.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC02F1E892C8E00FE0C01 /* -5.png */; };
+		463AC0441E892C8E00FE0C01 /* -6.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0301E892C8E00FE0C01 /* -6.png */; };
+		463AC0451E892C8E00FE0C01 /* 停火.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0321E892C8E00FE0C01 /* 停火.png */; };
+		463AC0461E892C8E00FE0C01 /* 打0.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0331E892C8E00FE0C01 /* 打0.png */; };
+		463AC0471E892C8E00FE0C01 /* 打1.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0341E892C8E00FE0C01 /* 打1.png */; };
+		463AC0481E892C8E00FE0C01 /* 打2.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0351E892C8E00FE0C01 /* 打2.png */; };
+		463AC0491E892C8E00FE0C01 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0371E892C8E00FE0C01 /* 0.png */; };
+		463AC04A1E892C8E00FE0C01 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0381E892C8E00FE0C01 /* 1.png */; };
+		463AC04B1E892C8E00FE0C01 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC0391E892C8E00FE0C01 /* 2.png */; };
+		463AC04C1E892C8E00FE0C01 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC03A1E892C8E00FE0C01 /* 3.png */; };
+		463AC04D1E892C8E00FE0C01 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC03B1E892C8E00FE0C01 /* 4.png */; };
+		463AC04E1E892C8E00FE0C01 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC03C1E892C8E00FE0C01 /* 5.png */; };
+		463AC04F1E892C8E00FE0C01 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 463AC03D1E892C8E00FE0C01 /* 6.png */; };
+		463AC0521E8933C400FE0C01 /* Marine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463AC0511E8933C400FE0C01 /* Marine.swift */; };
 		4696090F1E820DD500C5CF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696090E1E820DD500C5CF36 /* AppDelegate.swift */; };
 		469609111E820DD500C5CF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469609101E820DD500C5CF36 /* ViewController.swift */; };
 		469609141E820DD500C5CF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469609121E820DD500C5CF36 /* Main.storyboard */; };
@@ -21,6 +40,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		463AC02A1E892C8E00FE0C01 /* -0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-0.png"; sourceTree = "<group>"; };
+		463AC02B1E892C8E00FE0C01 /* -1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-1.png"; sourceTree = "<group>"; };
+		463AC02C1E892C8E00FE0C01 /* -2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-2.png"; sourceTree = "<group>"; };
+		463AC02D1E892C8E00FE0C01 /* -3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-3.png"; sourceTree = "<group>"; };
+		463AC02E1E892C8E00FE0C01 /* -4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-4.png"; sourceTree = "<group>"; };
+		463AC02F1E892C8E00FE0C01 /* -5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-5.png"; sourceTree = "<group>"; };
+		463AC0301E892C8E00FE0C01 /* -6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-6.png"; sourceTree = "<group>"; };
+		463AC0321E892C8E00FE0C01 /* 停火.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "停火.png"; sourceTree = "<group>"; };
+		463AC0331E892C8E00FE0C01 /* 打0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打0.png"; sourceTree = "<group>"; };
+		463AC0341E892C8E00FE0C01 /* 打1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打1.png"; sourceTree = "<group>"; };
+		463AC0351E892C8E00FE0C01 /* 打2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打2.png"; sourceTree = "<group>"; };
+		463AC0371E892C8E00FE0C01 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		463AC0381E892C8E00FE0C01 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		463AC0391E892C8E00FE0C01 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		463AC03A1E892C8E00FE0C01 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		463AC03B1E892C8E00FE0C01 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		463AC03C1E892C8E00FE0C01 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		463AC03D1E892C8E00FE0C01 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		463AC0511E8933C400FE0C01 /* Marine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marine.swift; sourceTree = "<group>"; };
 		4696090B1E820DD500C5CF36 /* MarineImba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarineImba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4696090E1E820DD500C5CF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469609101E820DD500C5CF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +85,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463AC0291E892C8E00FE0C01 /* 后退 */ = {
+			isa = PBXGroup;
+			children = (
+				463AC02A1E892C8E00FE0C01 /* -0.png */,
+				463AC02B1E892C8E00FE0C01 /* -1.png */,
+				463AC02C1E892C8E00FE0C01 /* -2.png */,
+				463AC02D1E892C8E00FE0C01 /* -3.png */,
+				463AC02E1E892C8E00FE0C01 /* -4.png */,
+				463AC02F1E892C8E00FE0C01 /* -5.png */,
+				463AC0301E892C8E00FE0C01 /* -6.png */,
+			);
+			path = "后退";
+			sourceTree = "<group>";
+		};
+		463AC0311E892C8E00FE0C01 /* 开火 */ = {
+			isa = PBXGroup;
+			children = (
+				463AC0321E892C8E00FE0C01 /* 停火.png */,
+				463AC0331E892C8E00FE0C01 /* 打0.png */,
+				463AC0341E892C8E00FE0C01 /* 打1.png */,
+				463AC0351E892C8E00FE0C01 /* 打2.png */,
+			);
+			path = "开火";
+			sourceTree = "<group>";
+		};
+		463AC0361E892C8E00FE0C01 /* 前进 */ = {
+			isa = PBXGroup;
+			children = (
+				463AC0371E892C8E00FE0C01 /* 0.png */,
+				463AC0381E892C8E00FE0C01 /* 1.png */,
+				463AC0391E892C8E00FE0C01 /* 2.png */,
+				463AC03A1E892C8E00FE0C01 /* 3.png */,
+				463AC03B1E892C8E00FE0C01 /* 4.png */,
+				463AC03C1E892C8E00FE0C01 /* 5.png */,
+				463AC03D1E892C8E00FE0C01 /* 6.png */,
+			);
+			path = "前进";
+			sourceTree = "<group>";
+		};
+		463AC0501E892CD900FE0C01 /* Marine */ = {
+			isa = PBXGroup;
+			children = (
+				463AC0511E8933C400FE0C01 /* Marine.swift */,
+			);
+			path = Marine;
+			sourceTree = "<group>";
+		};
 		469609021E820DD500C5CF36 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +176,9 @@
 		4696095D1E83EC5800C5CF36 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				463AC0291E892C8E00FE0C01 /* 后退 */,
+				463AC0311E892C8E00FE0C01 /* 开火 */,
+				463AC0361E892C8E00FE0C01 /* 前进 */,
 				46E1CEEF1E86B7B000C8630F /* bg.jpeg */,
 				4696095E1E83ECB500C5CF36 /* 开始游戏.png */,
 			);
@@ -100,6 +188,7 @@
 		469609601E83EDEE00C5CF36 /* GameViewController */ = {
 			isa = PBXGroup;
 			children = (
+				463AC0501E892CD900FE0C01 /* Marine */,
 				469609611E83EE0100C5CF36 /* BaseViewController.swift */,
 				469609631E83EE1600C5CF36 /* GameViewController.swift */,
 			);
@@ -166,10 +255,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463AC0491E892C8E00FE0C01 /* 0.png in Resources */,
+				463AC0451E892C8E00FE0C01 /* 停火.png in Resources */,
+				463AC0421E892C8E00FE0C01 /* -4.png in Resources */,
+				463AC0401E892C8E00FE0C01 /* -2.png in Resources */,
 				46E1CEF01E86B7B000C8630F /* bg.jpeg in Resources */,
+				463AC0431E892C8E00FE0C01 /* -5.png in Resources */,
+				463AC0441E892C8E00FE0C01 /* -6.png in Resources */,
 				4696091C1E820DD500C5CF36 /* LaunchScreen.storyboard in Resources */,
+				463AC03F1E892C8E00FE0C01 /* -1.png in Resources */,
+				463AC04F1E892C8E00FE0C01 /* 6.png in Resources */,
+				463AC04A1E892C8E00FE0C01 /* 1.png in Resources */,
+				463AC0411E892C8E00FE0C01 /* -3.png in Resources */,
+				463AC04E1E892C8E00FE0C01 /* 5.png in Resources */,
 				469609191E820DD500C5CF36 /* Assets.xcassets in Resources */,
+				463AC0471E892C8E00FE0C01 /* 打1.png in Resources */,
 				4696095F1E83ECB500C5CF36 /* 开始游戏.png in Resources */,
+				463AC03E1E892C8E00FE0C01 /* -0.png in Resources */,
+				463AC04D1E892C8E00FE0C01 /* 4.png in Resources */,
+				463AC04C1E892C8E00FE0C01 /* 3.png in Resources */,
+				463AC0461E892C8E00FE0C01 /* 打0.png in Resources */,
+				463AC04B1E892C8E00FE0C01 /* 2.png in Resources */,
+				463AC0481E892C8E00FE0C01 /* 打2.png in Resources */,
 				469609141E820DD500C5CF36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +291,7 @@
 				469609621E83EE0100C5CF36 /* BaseViewController.swift in Sources */,
 				469609171E820DD500C5CF36 /* MarineImba.xcdatamodeld in Sources */,
 				469609111E820DD500C5CF36 /* ViewController.swift in Sources */,
+				463AC0521E8933C400FE0C01 /* Marine.swift in Sources */,
 				4696090F1E820DD500C5CF36 /* AppDelegate.swift in Sources */,
 				469609641E83EE1600C5CF36 /* GameViewController.swift in Sources */,
 				4696095C1E83EBD300C5CF36 /* Extension.swift in Sources */,
