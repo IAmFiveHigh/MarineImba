@@ -28,6 +28,8 @@ class GameViewController: BaseViewController {
     //MARK: 计时器
     fileprivate var timer: Timer!
     
+    
+    
     //MARK: - viewWillAppear
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -60,7 +62,7 @@ class GameViewController: BaseViewController {
         
         setupDirectionButton()
         
-        setupFireButton()
+        setupOperateButton()
         
         setupTimer()
     }
@@ -147,12 +149,21 @@ class GameViewController: BaseViewController {
         marineKing.endAnimation()
     }
     
-    fileprivate func setupFireButton() {
+    fileprivate func setupOperateButton() {
         
-        let button = UIButton(frame: CGRect(x: 20, y: horizonLine + 20, width: marineHeight, height: marineHeight))
-        button.setBackgroundImage(UIImage(named: "fire"), for: .normal)
+        let button = UIButton(frame: CGRect(x: 20, y: horizonLine + 20, width: marineHeight / 2, height: marineHeight / 2))
+        button.setBackgroundImage(UIImage(named: "attack"), for: .normal)
         button.addTarget(self, action: #selector(fire), for: .touchUpInside)
         view.addSubview(button)
+        
+        let stimulantButton = ColddownButton(frame: CGRect(x: 0, y: 0, width: marineHeight / 2, height: marineHeight / 2), cd: 8, action: {
+            
+            
+        })
+        stimulantButton.setBack(image: "stimulant")
+        stimulantButton.setX(button.right() + 20)
+        stimulantButton.setY(button.y())
+        view.addSubview(stimulantButton)
     }
     
     @objc fileprivate func fire() {
@@ -161,6 +172,7 @@ class GameViewController: BaseViewController {
         marineKing.fire()
         
     }
+    
     
     //MARK: - 添加计时器
     fileprivate func setupTimer() {

@@ -34,7 +34,11 @@
 		465E26E51E8BC39300011521 /* 开火2.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26E01E8BC39300011521 /* 开火2.png */; };
 		465E26E61E8BC39300011521 /* 开火3.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26E11E8BC39300011521 /* 开火3.png */; };
 		465E26E71E8BC39300011521 /* 开火4.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26E21E8BC39300011521 /* 开火4.png */; };
-		465E26E91E8BC77600011521 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26E81E8BC77600011521 /* fire.png */; };
+		465E26ED1E91FF0B00011521 /* attack.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26EA1E91FF0B00011521 /* attack.png */; };
+		465E26EE1E91FF0B00011521 /* shield.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26EB1E91FF0B00011521 /* shield.png */; };
+		465E26EF1E91FF0B00011521 /* stimulant.png in Resources */ = {isa = PBXBuildFile; fileRef = 465E26EC1E91FF0B00011521 /* stimulant.png */; };
+		465E26F21E926A2800011521 /* ColddownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E26F11E926A2800011521 /* ColddownButton.swift */; };
+		465E27171E94EF1B00011521 /* CakeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E27161E94EF1B00011521 /* CakeProgressView.swift */; };
 		4696090F1E820DD500C5CF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696090E1E820DD500C5CF36 /* AppDelegate.swift */; };
 		469609111E820DD500C5CF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469609101E820DD500C5CF36 /* ViewController.swift */; };
 		469609141E820DD500C5CF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469609121E820DD500C5CF36 /* Main.storyboard */; };
@@ -76,7 +80,11 @@
 		465E26E01E8BC39300011521 /* 开火2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开火2.png"; sourceTree = "<group>"; };
 		465E26E11E8BC39300011521 /* 开火3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开火3.png"; sourceTree = "<group>"; };
 		465E26E21E8BC39300011521 /* 开火4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开火4.png"; sourceTree = "<group>"; };
-		465E26E81E8BC77600011521 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		465E26EA1E91FF0B00011521 /* attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack.png; sourceTree = "<group>"; };
+		465E26EB1E91FF0B00011521 /* shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shield.png; sourceTree = "<group>"; };
+		465E26EC1E91FF0B00011521 /* stimulant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stimulant.png; sourceTree = "<group>"; };
+		465E26F11E926A2800011521 /* ColddownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColddownButton.swift; sourceTree = "<group>"; };
+		465E27161E94EF1B00011521 /* CakeProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeProgressView.swift; sourceTree = "<group>"; };
 		4696090B1E820DD500C5CF36 /* MarineImba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarineImba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4696090E1E820DD500C5CF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469609101E820DD500C5CF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,7 +128,6 @@
 		463AC0311E892C8E00FE0C01 /* 开火 */ = {
 			isa = PBXGroup;
 			children = (
-				465E26E81E8BC77600011521 /* fire.png */,
 				465E26DE1E8BC39300011521 /* 开火0.png */,
 				465E26DF1E8BC39300011521 /* 开火1.png */,
 				465E26E01E8BC39300011521 /* 开火2.png */,
@@ -164,6 +171,15 @@
 				465E26D91E8BB2E200011521 /* button_right.png */,
 			);
 			path = "箭头";
+			sourceTree = "<group>";
+		};
+		465E26F01E9269D400011521 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				465E27161E94EF1B00011521 /* CakeProgressView.swift */,
+				465E26F11E926A2800011521 /* ColddownButton.swift */,
+			);
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 		469609021E820DD500C5CF36 = {
@@ -210,6 +226,9 @@
 		4696095D1E83EC5800C5CF36 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				465E26EA1E91FF0B00011521 /* attack.png */,
+				465E26EB1E91FF0B00011521 /* shield.png */,
+				465E26EC1E91FF0B00011521 /* stimulant.png */,
 				465E26D71E8BB2E200011521 /* 箭头 */,
 				463AC0291E892C8E00FE0C01 /* 后退 */,
 				463AC0311E892C8E00FE0C01 /* 开火 */,
@@ -223,6 +242,7 @@
 		469609601E83EDEE00C5CF36 /* GameViewController */ = {
 			isa = PBXGroup;
 			children = (
+				465E26F01E9269D400011521 /* CustomButton */,
 				463AC0501E892CD900FE0C01 /* Marine */,
 				469609611E83EE0100C5CF36 /* BaseViewController.swift */,
 				469609631E83EE1600C5CF36 /* GameViewController.swift */,
@@ -291,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				465E26E61E8BC39300011521 /* 开火3.png in Resources */,
-				465E26E91E8BC77600011521 /* fire.png in Resources */,
+				465E26EF1E91FF0B00011521 /* stimulant.png in Resources */,
 				465E26E71E8BC39300011521 /* 开火4.png in Resources */,
 				465E26DD1E8BC14700011521 /* 开火.png in Resources */,
 				463AC0491E892C8E00FE0C01 /* 0.png in Resources */,
@@ -304,6 +324,8 @@
 				463AC0441E892C8E00FE0C01 /* -6.png in Resources */,
 				4696091C1E820DD500C5CF36 /* LaunchScreen.storyboard in Resources */,
 				465E26DA1E8BB2E200011521 /* button_left.png in Resources */,
+				465E26EE1E91FF0B00011521 /* shield.png in Resources */,
+				465E26ED1E91FF0B00011521 /* attack.png in Resources */,
 				463AC03F1E892C8E00FE0C01 /* -1.png in Resources */,
 				463AC04F1E892C8E00FE0C01 /* 6.png in Resources */,
 				463AC04A1E892C8E00FE0C01 /* 1.png in Resources */,
@@ -337,6 +359,8 @@
 				469609111E820DD500C5CF36 /* ViewController.swift in Sources */,
 				463AC0521E8933C400FE0C01 /* Marine.swift in Sources */,
 				4696090F1E820DD500C5CF36 /* AppDelegate.swift in Sources */,
+				465E26F21E926A2800011521 /* ColddownButton.swift in Sources */,
+				465E27171E94EF1B00011521 /* CakeProgressView.swift in Sources */,
 				469609641E83EE1600C5CF36 /* GameViewController.swift in Sources */,
 				4696095C1E83EBD300C5CF36 /* Extension.swift in Sources */,
 			);
