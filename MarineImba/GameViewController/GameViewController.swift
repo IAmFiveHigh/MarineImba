@@ -16,6 +16,9 @@ class GameViewController: BaseViewController {
     //MARK: - 属性
     fileprivate var goForwardSpeed: CGFloat = -2
     fileprivate var retreatSpeed: CGFloat = 2
+    
+    fileprivate var rate: CGFloat = 1 //倍率
+    
     fileprivate var speed: CGFloat = 0
     
     //MARK: - 主角
@@ -135,10 +138,10 @@ class GameViewController: BaseViewController {
         
         switch sender.tag {
         case 10: //后退
-            speed = retreatSpeed
+            speed = retreatSpeed * rate
             marineKing.retreat()
         default: //前进
-            speed = goForwardSpeed
+            speed = goForwardSpeed * rate
             marineKing.goForward()
         }
     }
@@ -158,12 +161,18 @@ class GameViewController: BaseViewController {
         
         let stimulantButton = ColddownButton(frame: CGRect(x: 0, y: 0, width: marineHeight / 2, height: marineHeight / 2), cd: 8, action: { [weak self] in
             
-            self?.goForwardSpeed *= 2
-            self?.retreatSpeed *= 2
+            self?.rate = 2
+            self?.speed *= (self?.rate)!
+            
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4, execute: {
-                self?.goForwardSpeed /= 2
-                self?.retreatSpeed /= 2
+                
+                if self?.speed != 0 {
+                    self?.speed /= (self?.rate)!
+                }
+                
+                
+                self?.rate = 1
             })
         })
         stimulantButton.setBack(image: "stimulant")
