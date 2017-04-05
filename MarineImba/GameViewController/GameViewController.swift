@@ -14,8 +14,8 @@ let horizonLine = screenHeigth / 3 * 2
 class GameViewController: BaseViewController {
 
     //MARK: - 属性
-    fileprivate let goForwardSpeed: CGFloat = -2
-    fileprivate let retreatSpeed: CGFloat = 2
+    fileprivate var goForwardSpeed: CGFloat = -2
+    fileprivate var retreatSpeed: CGFloat = 2
     fileprivate var speed: CGFloat = 0
     
     //MARK: - 主角
@@ -156,9 +156,15 @@ class GameViewController: BaseViewController {
         button.addTarget(self, action: #selector(fire), for: .touchUpInside)
         view.addSubview(button)
         
-        let stimulantButton = ColddownButton(frame: CGRect(x: 0, y: 0, width: marineHeight / 2, height: marineHeight / 2), cd: 8, action: {
+        let stimulantButton = ColddownButton(frame: CGRect(x: 0, y: 0, width: marineHeight / 2, height: marineHeight / 2), cd: 8, action: { [weak self] in
             
+            self?.goForwardSpeed *= 2
+            self?.retreatSpeed *= 2
             
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4, execute: {
+                self?.goForwardSpeed /= 2
+                self?.retreatSpeed /= 2
+            })
         })
         stimulantButton.setBack(image: "stimulant")
         stimulantButton.setX(button.right() + 20)
