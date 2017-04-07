@@ -31,7 +31,8 @@ class GameViewController: BaseViewController {
     //MARK: 计时器
     fileprivate var timer: Timer!
     
-    
+    //MARK: 血条
+    fileprivate var healthPointView: HPView!
     
     //MARK: - viewWillAppear
     override func viewWillDisappear(_ animated: Bool) {
@@ -66,6 +67,8 @@ class GameViewController: BaseViewController {
         setupDirectionButton()
         
         setupOperateButton()
+        
+        setupHealthPointView()
         
         setupTimer()
     }
@@ -152,6 +155,7 @@ class GameViewController: BaseViewController {
         marineKing.endAnimation()
     }
     
+    //MARK: - 重点 设置功能按钮（开火 兴奋剂...）
     fileprivate func setupOperateButton() {
         
         let button = UIButton(frame: CGRect(x: 20, y: horizonLine + 20, width: marineHeight / 2, height: marineHeight / 2))
@@ -164,6 +168,8 @@ class GameViewController: BaseViewController {
             self?.rate = 2
             self?.speed *= (self?.rate)!
             
+            //掉10血
+            self?.healthPointView.change(HP: -10)
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4, execute: {
                 
@@ -179,6 +185,17 @@ class GameViewController: BaseViewController {
         stimulantButton.setX(button.right() + 20)
         stimulantButton.setY(button.y())
         view.addSubview(stimulantButton)
+        
+        let healButton = ColddownButton(frame: CGRect(x:0 ,y: 0, width: marineHeight / 2, height: marineHeight / 2), cd: 20, action: { [weak self] in
+            
+            //加10血
+            self?.healthPointView.change(HP: 20)
+            
+        })
+        healButton.setBack(image: "heal")
+        healButton.setX(stimulantButton.right() + 20)
+        healButton.setY(button.y())
+        view.addSubview(healButton)
     }
     
     @objc fileprivate func fire() {
@@ -186,6 +203,13 @@ class GameViewController: BaseViewController {
         directionButtonCancel()
         marineKing.fire()
         
+    }
+    
+    //MARK: - 设置血条
+    fileprivate func setupHealthPointView() {
+        
+        healthPointView = HPView(frame: CGRect(x: 8, y: 20, width: screenWidth / 2, height: 40), hp: 45)
+        view.addSubview(healthPointView)
     }
     
     
@@ -211,5 +235,7 @@ extension GameViewController {
         case retreat = 1
     }
 }
+
+
 
 

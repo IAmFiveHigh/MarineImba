@@ -117,14 +117,4 @@ extension Marine {
         })
     }
     
-    func stimulate() {
-        
-        animationDuration = 0.5
-    }
-    
-    func stimulateEnd() {
-        
-        animationDuration = 1
-    }
-    
 }

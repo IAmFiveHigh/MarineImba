@@ -66,7 +66,7 @@ class CakeProgressView: UIView {
         
         addSubview(cakeProgress)
         
-        label.frame = CGRect(x: 0, y: 0, width: width() / 3, height: width() / 3)
+        label.frame = CGRect(x: 0, y: 0, width: width() / 2, height: width() / 2)
         label.center = center
         label.text = "\(cd)"
         addSubview(label)
